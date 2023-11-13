@@ -16,4 +16,5 @@ void CLog::test(void)
 void CLog::writeLogTest(void)
 {
     spdlog::info("Welcome to spdlog version {}.{}.{}  !",1,1,1);
+	
 }
