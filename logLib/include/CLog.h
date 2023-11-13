@@ -9,5 +9,6 @@ public:
 public:
     virtual void test(void) override;
     virtual void writeLogTest(void) override;
+	
 
 };

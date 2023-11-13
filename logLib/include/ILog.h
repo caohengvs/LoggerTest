@@ -15,5 +15,6 @@ public:
 public:
 
     virtual void test(void) = 0;
+	
     virtual void writeLogTest() = 0;
 };

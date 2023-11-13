@@ -10,6 +10,7 @@ ILog *ILog::s_getInstance(ELoggerType eType)
     {
         static CLog oLog;
         return dynamic_cast<ILog *>(&oLog);
+		
     }
     }
     return nullptr;
