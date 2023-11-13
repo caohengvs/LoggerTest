@@ -1,8 +1,16 @@
 #include "../include/ILog.h"
 #include "../include/CLog.h"
 
-ILog *ILog::s_getInstance(void)
+ILog *ILog::s_getInstance(ELoggerType eType)
 {
-    static CLog oLog;
-    return dynamic_cast<ILog *>(&oLog);
+    switch (eType)
+    {
+    case ELoggerType::eSpdLogger:
+    case ELoggerType::epLogger:
+    {
+        static CLog oLog;
+        return dynamic_cast<ILog *>(&oLog);
+    }
+    }
+    return nullptr;
 }

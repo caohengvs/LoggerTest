@@ -10,9 +10,10 @@ public:
     virtual ~ILog() = default;
 
 public:
-    static ILog *s_getInstance(void);
+    static ILog *s_getInstance(ELoggerType eType = ELoggerType::eSpdLogger);
 
 public:
 
     virtual void test(void) = 0;
+    virtual void writeLogTest() = 0;
 };

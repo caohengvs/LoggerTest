@@ -6,4 +6,8 @@
 #define _SYS_STATUS_HEADER_DLL_ __declspec(dllimport)
 #define _SYS_STATUS_FUN_HEADER_DLL_  extern "C" __declspec(dllimport)
 #endif
+enum class ELoggerType{
+    eSpdLogger,
+    epLogger
+};
 
